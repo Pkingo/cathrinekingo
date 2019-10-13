@@ -1,0 +1,42 @@
+.body-grid {
+  padding: 30px 0 30px 0;
+  column-gap: 20px;
+  row-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.left-line,
+.left-paragraf {
+  grid-column-start: 2;
+}
+
+.right-line,
+.right-paragraf {
+  grid-column-start: 3;
+}
+
+/* Mobile and tablet specific styling */
+@media all and (max-width: 890px) {
+  .body-grid {
+    padding: 10px 0 10px 0;
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 10px 1fr 10px;
+  }
+
+  .left-line {
+    grid-row-start: 2;
+  }
+
+  .right-line {
+    grid-row-start: 4;
+  }
+
+  .left-line,
+  .right-line,
+  .left-paragraf,
+  .right-paragraf {
+    grid-column-start: 2;
+  }
+}

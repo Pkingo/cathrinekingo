@@ -1,0 +1,35 @@
+.body-grid {
+  padding: 30px 0 30px 0;
+  column-gap: 20px;
+  row-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.left-paragraf {
+  grid-column-start: 2;
+}
+
+.large-paragraf {
+  grid-column: 2/4;
+}
+
+/* Mobile and tablet specific styling */
+@media all and (max-width: 890px) {
+  .body-grid {
+    padding: 10px 0 10px 0;
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 10px 1fr 10px;
+  }
+
+  .large-paragraf,
+  .right-paragraf,
+  .left-paragraf {
+    grid-column-start: 2;
+  }
+  
+  .image-container {
+    grid-column: 1/4;
+  }
+}
