@@ -32,7 +32,7 @@
         "gulp-cli": "^2.0.1",
         "gulp-sass": "^4.0.2",
         "is-posix-bracket": "^0.1.1",
-        "jquery": "3.3.1",
+        "jquery": "3.5.0",
         "jquery.easing": "^1.4.1",
         "popper": "^1.0.1",
         "preserve": "^0.2.0"
